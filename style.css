@@ -1,0 +1,122 @@
+:root{
+    
+    --cor-palavras: #f3f3f3;
+    --cor-form-survey: rgba(0, 0, 0, 0.541);
+    --botao-submit: #37af65;
+}
+
+body{
+    
+    background: linear-gradient(to right,rgba(255, 0, 0, 0.767), orange);
+    padding-top: 25px;
+    padding-left: 622px;
+    padding-right: 622px;
+    padding-bottom: 100px;
+}
+
+H1{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: var(--cor-palavras);
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+
+#description{
+    text-align: center;
+    color: var(--cor-palavras);
+    font-family: italic;
+    font-weight: 400;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    font-size: 1.6rem;
+    margin-top: 0px;
+}
+
+#survey-form{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    padding: 2.5rem;
+    margin: 0;
+    border-radius: 0.95rem;
+    background-color: var(--cor-form-survey);
+    color: var(--cor-palavras);
+    box-sizing: border-box;
+
+}
+
+.input-radio{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-checkbox{
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+#form-group{
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.label{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.form-control{
+    height: 30px;
+    width: 550px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px; 
+}
+
+#comments{
+    font-family: 'Poppins', sans-serif;
+    height: 98px;
+    width: 558px;
+    
+}
+button{
+    border: none;
+}
+
+.submit-button{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--botao-submit);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    .linha{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    body{
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    .form-control{
+        width: 210px;
+    }
+    .label{
+        width: 230px;
+    }
+    #comments{
+        width: 210px;
+    }
+}

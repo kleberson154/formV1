@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormV1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1 id="title">Formulário de Pesquisa</H1>
+    <p id="description">Obrigado por nos ajudar a melhorar a plataforma</p>
+        <form id="survey-form">
+
+
+            <div id="form-group">
+                <label id="name-label" class="label">Nome</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Coloque seu nome" required>
+            </div>
+                
+
+            <div id="form-group">
+                <label id="email-label" class="label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Coloque seu email" required>
+            </div>
+
+
+            <div id="form-group">
+                <label id="number-label" class="label">Idade</label>
+                <input type="number" name="age" id="number" class="form-control" min="14" max="99" placeholder="Coloque sua idade" required>
+            </div>
+
+
+            <div id="form-group">
+                <p>Qual opção descreve melhor sua função atual?</p>
+                <select name="role" id="dropdown" class="form-control">
+                    <option disabled="" selected="" value="">Selecione a função atual</option>
+                    <option value="student">Estudante</option>
+                    <option value="job">Tempo Integral</option>
+                    <option value="learner">Meio Periodo</option>
+                    <option value="preferNo">Prefiro nao responder</option>
+                    <option value="other">Outros</option>
+                </select>
+            </div>
+
+
+            <div id="form-group"><p>Você Conhece a nossa empresa?</p>
+                <label class="label">
+                    <input type="radio" value="Definitivamente" name="user-recommend" class="input-radio" checked>
+                    Definitivamente
+                </label>
+
+                <label class="label">
+                    <input type="radio" value="Pouco" name="user-recommend" class="input-radio">
+                    Pouco
+                </label>
+
+                <label class="label">
+                    <input type="radio" value="Não" name="user-recommend" class="input-radio">
+                    Não
+                </label></div>
+
+
+            <div id="form-group"><p>Quais as chances de você recomendar a nossa empresa para um amigo?</p>
+                <label class="label">
+                    <input type="radio" value="Provável" name="user-recommend" class="input-radio" checked>
+                    Provável
+                </label>
+                
+                <label class="label">
+                    <input type="radio" value="Pouco provável" name="user-recommend" class="input-radio">
+                    Pouco provável
+                </label>
+                
+                <label class="label">
+                    <input type="radio" value="Nao recomendaria" name="user-recommend" class="input-radio">
+                    Nao recomendaria
+                </label>
+            </div>
+                
+            <div id="form-group"><p>O que você gostaria de ver melhorado?</p>
+                <label class="label">
+                    <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+                    Projetos de front-end
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+                    Projetos de back-end
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="Data visualization" type="checkbox" class="input-checkbox">
+                    Visualização de dados
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="Challenges" type="checkbox" class="input-checkbox">
+                    Desafios
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="Open source community" type="checkbox" class="input-checkbox">
+                    Comunidade de código aberto
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="Gitter help room" type="checkbox" class="input-checkbox">
+                    Gitter help rooms
+                </label>
+
+                <label class="label">
+                    <input name="prefer" value="videos" type="checkbox" class="input-checkbox">
+                    Videos
+                </label>
+            </div>
+                
+            
+            <div id="form-group">
+                <p>Algum comentário ou sugestão?</p>
+                <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Comente Aqui..."></textarea>
+            </div>
+
+            <div id="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
+                
+            </div>
+      </form>
+</body>
+</html>
