@@ -6,12 +6,7 @@
 }
 
 body{
-    
     background: linear-gradient(to right,rgba(255, 0, 0, 0.767), orange);
-    padding-top: 25px;
-    padding-left: 622px;
-    padding-right: 622px;
-    padding-bottom: 100px;
 }
 
 H1{
@@ -21,6 +16,12 @@ H1{
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #description{
@@ -72,7 +73,7 @@ H1{
 
 .form-control{
     height: 30px;
-    width: 550px;
+    width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 5px; 
 }
@@ -80,7 +81,7 @@ H1{
 #comments{
     font-family: 'Poppins', sans-serif;
     height: 98px;
-    width: 558px;
+    width: 100%;
     
 }
 button{
@@ -95,28 +96,4 @@ button{
     color: inherit;
     border-radius: 2px;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 1100px){
-    .linha{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    body{
-        padding-right: 0;
-        padding-left: 0;
-        padding-bottom: 10px;
-    }
-    .form-control{
-        width: 210px;
-    }
-    .label{
-        width: 230px;
-    }
-    #comments{
-        width: 210px;
-    }
 }
